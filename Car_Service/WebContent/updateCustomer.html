@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div{
+	width:50%;
+	background-color:aqua;
+	margin:auto;
+	border: 3px solid black;
+}
+.left{
+	margin-left:200px;
+	position:fixed;
+}
+.right{
+	margin-left:300px;
+	position:fixed;
+}
+#btn{
+	margin-left:300px;
+	position:fixed;
+}
+p,a{
+	font-size:16px;
+	text-align: center;
+	color:black;
+}
+body{
+	background-color:#4200ff;
+}
+h3{
+	text-align:center;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>Update</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="jquery1-7-2.js"></script>
+<script>
+
+$(function(){
+	$("#btn").on("click",function(){
+		$.ajax({
+			url:"http://localhost:8080/Car_Service_REST_Services/rest/carservice/updateCustomer/"+$("#customer_id").val()+"/"+$("#property").val()+"/"+$("#newVal").val(),
+			type:"GET",
+			contentType:"charset=utf-8",
+			success:function(data){
+				console.log(data);
+			},
+			error:function(errorThrown){
+				console.log(errorThrown);
+			}
+		});
+	});
+});
+
+</script>
+</head>
+<body>
+<div>
+<h3><u>Update</u></h3><br/><br/>
+<form class="form-group">
+<label for="customer_id" class="left">Customer Id</label>
+<input type="number" name="customer_id" id="customer_id" class="right" required/><br/><br/>
+<label for="property" class="left">Property</label>
+<select name="property" id="property" class="right">
+<option value="addr">Address</option>
+<option value="cname">Name</option>
+<option value="email">Email</option>
+</select>
+<br/><br/>
+<label for="newVal" class="left">New Value</label>
+<input type="text" id="newVal" name="newVal" class="right" required/><br/><br/>
+<input type="submit" value="Update" class="btn-primary" id="btn"/><br/><br/>
+</form>
+<b><a href="main.html"><p>BACK</p></a></b>
+</div>
+</body>
+</html>

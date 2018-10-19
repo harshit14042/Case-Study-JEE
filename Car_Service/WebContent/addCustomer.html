@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Customer</title>
+<style>
+div{
+	width:50%;
+	background-color:aqua;
+	margin:auto;
+	border: 3px solid black;
+}
+.left{
+	margin-left:200px;
+	position:fixed;
+}
+.right{
+	margin-left:300px;
+	position:fixed;
+}
+#btn{
+	margin-left:300px;
+	position:fixed;
+}
+p,a{
+	font-size:16px;
+	text-align: center;
+	color:black;
+}
+body{
+	background-color:#4200ff;
+}
+</style>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<body bgcolor="#4200ff">
+<div>
+<form action="addCustomer" method="post" class="form-group">
+
+<h3 align="center">Customer Details</h3>
+
+<label for="cname" class="left">Name</label>
+<input type="text" name="cname" id="cname"  class="right" required/><br/><br/>
+<label for="addr"  class="left">Address</label>
+<input type="text" name="addr" id="addr"  class="right" required/><br/><br/>
+<label for="email"  class="left">Email</label>
+<input type="email" name="email" id="email"  class="right" required/><br/><br/>
+<h3 align="center">Car Details</h3>
+
+<label for="car_no" class="left">Reg No.</label>
+<input type="text" name="car_no" id="car_no" class="right" required/><br/><br/>
+<label for="company"  class="left">Company</label>
+<input type="text" name="company" id="company" class="right"/><br/><br/>
+<label for="car_model" class="left">Model</label>
+<input type="text" name="car_model" id="car_model"  class="right"/><br/><br/>
+
+<label for="car_age"  class="left">Car Age</label>
+<input type="number" name="car_age" id="car_age" class="right" required/><br/><br/>
+
+<input type="submit" value="Submit" id="btn" class="btn-primary"/><br/><br/>
+<b><a href="main.html"><p>BACK</p></a></b>
+</form>
+</div>
+</body>
+</html>

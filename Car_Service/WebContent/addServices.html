@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Service</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+div{
+	width:50%;
+	background-color:aqua;
+	margin:auto;
+	border: 3px solid black;
+}
+.left{
+	margin-left:200px;
+	position:fixed;
+}
+.right{
+	margin-left:300px;
+	position:fixed;
+}
+#btn{
+	margin-left:300px;
+	position:fixed;
+}
+p,a{
+	font-size:16px;
+	text-align: center;
+	color:black;
+}
+body{
+	background-color:#4200ff;
+}
+h3{
+	text-align:center;
+}
+</style>
+</head>
+<body>
+<div>
+<h3><u>Add Service</u></h3><br/>
+<form method="post" action="addService" class="form-group">
+<label for="customer_id" class="left">Customer Id</label>
+<input type="number" name="customer_id" id="customer_id" class="right" required/><br/><br/>
+<label for="car_no" class="left">Car no</label>
+<input type="text" name="car_no" id="car_no" class="right" required/><br/><br/>
+<label for="services" class="left">Service</label>
+<select name="services" id="services" class="right">
+	<option value="polishing">Polishing</option>
+	<option value="wheelbalancing">Wheel Balancing</option>
+	<option value="decors">Decors</option>
+</select><br/><br/>
+<label for="service_date" class="left">Service Date</label>
+<input type="date" name="service_date" id="service_date" class="right"/><br/><br/>
+<label for="delivery_date" class="left">Delivery Date</label>
+<input type="date" name="delivery_date" id="delivery_date" class="right"/><br/><br/><br/>
+<input type="submit" value="Add Service" id="btn" class="btn-primary"/><br/>
+</form>
+<b><a href="main.html"><p>BACK</p></a></b>
+</div>
+</body>
+</html>

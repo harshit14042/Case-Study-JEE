@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Login</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+div{
+	width:50%;
+	background-color:aqua;
+	margin:auto;
+	border: 3px solid black;
+}
+.left{
+	margin-left:200px;
+	position:fixed;
+}
+.right{
+	margin-left:300px;
+	position:fixed;
+}
+#btn{
+	margin-left:300px;
+	position:fixed;
+}
+p,a{
+	font-size:16px;
+	text-align: center;
+	color:black;
+}
+body{
+	background-color:#4200ff;
+}
+h3{
+	text-align:center;
+}
+</style>
+</head>
+<body>
+<div>
+<h3><u>Welcome !!</u></h3><br/><br/>
+<form method="post" action="emplogin" class="form-group">
+<label for="type">Login</label>
+<input type="radio" value="login" checked="checked" name="type"/>
+<label for="type">Register</label>
+<input type="radio" value="register" name="type" /><br/><br/>
+<label for="userId" class="left">UserId</label>
+<input type="text" name="userId" id="userId" class="right" required/><br/><br/>
+<label for="passWord" class="left">PassWord</label>
+<input type="password" name="passWord" id="passWord" class="right" required/><br/><br/>
+<input type="submit" value="Submit" id="btn" class="btn-primary"/><br/><br/>
+</form>
+</div>
+</body>
+</html>

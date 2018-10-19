@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Services</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+div{
+	width:50%;
+	background-color:aqua;
+	margin:auto;
+	border: 3px solid black;
+}
+.left{
+	margin-left:200px;
+	position:fixed;
+}
+.right{
+	margin-left:300px;
+	position:fixed;
+}
+#btn{
+	margin-left:300px;
+	position:fixed;
+}
+p,a{
+	font-size:16px;
+	text-align: center;
+	color:black;
+}
+body{
+	background-color:#4200ff;
+}
+h3{
+	text-align:center;
+}
+</style>
+</head>
+<body>
+<div>
+<h3><u>Get Service Log</u></h3><br/>
+<form action="serviceLog" method="post" class="form-group">
+<label for="customer_id" class="left">Customer Id</label>
+<input type="number" name="customer_id" id="customer_id" class="right" required/><br/><br/>
+<input type="submit" value="Submit" id="btn" class="btn-primary"/><br/><br/>
+<b><a href="main.html"><p>BACK</p></a></b>
+</form>
+</div>
+</body>
+</html>
